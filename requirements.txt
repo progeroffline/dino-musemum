@@ -1,0 +1,4 @@
+seleniumbase
+pillow
+pytesseract
+environs
