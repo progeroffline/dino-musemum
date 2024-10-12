@@ -37,12 +37,15 @@ Once the script is running, it will automatically handle the following tasks wit
 ## TODO ✅
 
 - [x] Implement full game loading check
+- [x] Close event notification window 
 - [ ] Retrieve current balance
 - [ ] Retrieve current number of coins
 - [ ] Retrieve current number of picks
 - [ ] Confirm "Return to Game" prompt
 - [ ] Retrieve list of exhibits
 - [ ] Automate exhibit upgrades
+- [x] Get available dinos to buy
+- [x] Buy available dinos  
 
 ## Contributing 🤝
 
