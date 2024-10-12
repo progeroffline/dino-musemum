@@ -2,3 +2,5 @@ seleniumbase
 pillow
 pytesseract
 environs
+rich
+opencv-python
