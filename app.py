@@ -27,7 +27,7 @@ class Canvas:
 class DinomuseumAutomation:
     def __init__(self, url: str):
         self.canvas_filename = "canvas.png"
-        self.driver = Driver(uc=True)
+        self.driver = Driver(uc=True, chromium_arg="--mute-audio")
         self.actions = ActionBuilder(self.driver)
         self.driver.uc_open_with_reconnect(url, 2)
 
@@ -93,6 +93,7 @@ class DinomuseumAutomation:
                 self.click_by_cords(*cords)
 
     def buy_available_upgrades(self) -> None:
+        self.make_screenshot()
         buy_buttons_cords = self.ui_detector.get_buy_buttons()
         for cords in buy_buttons_cords:
             self.click_by_cords(*cords)
@@ -102,10 +103,10 @@ class DinomuseumAutomation:
         self.close_notification()
         print("Game loading finished!!!")
 
-        self.buy_available_upgrades()
-        print("All upgrades buyed!")
-
-        self.driver.sleep(100000)
+        while True:
+            self.buy_available_upgrades()
+            print("All upgrades buyed!")
+            self.driver.sleep(5)
 
 
 if __name__ == "__main__":
