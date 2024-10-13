@@ -2,6 +2,9 @@
 
 This repository contains a script to automate all actions in the AoDmini_Bot Telegram web app. The script is designed to streamline and enhance gameplay automation, helping you perform various tasks quickly and efficiently.
 
+## Demo
+![](demo.gif)
+
 ## Features ✨
 
 - Fully automates gameplay actions
